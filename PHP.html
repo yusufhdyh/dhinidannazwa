@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #35424a;
+            font-weight: bold;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+        }
+        h2 {
+            color: #35424a;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+        code {
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Materi PHP</h1>
+</header>
+
+<nav>
+    <a href="#apa-itu-php">Apa itu PHP?</a>
+    <a href="#struktur-dasar-php">Struktur Dasar PHP</a>
+    <a href="#variabel-dan-tipe-data">Variabel dan Tipe Data</a>
+    <a href="#fungsi-dalam-php">Fungsi dalam PHP</a>
+    <a href="#contoh-penggunaan">Contoh Penggunaan PHP</a>
+</nav>
+
+<section id="apa-itu-php">
+    <h2>Apa itu PHP?</h2>
+    <p>PHP (PHP: Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk pengembangan web. PHP dapat digunakan untuk membuat halaman web dinamis, mengelola basis data, dan melakukan berbagai tugas pemrograman lainnya. PHP adalah bahasa yang open-source dan sangat populer di kalangan pengembang web.</p>
+</section>
+
+<section id="struktur-dasar-php">
+    <h2>Struktur Dasar PHP</h2>
+    <p>Untuk menulis kode PHP, Anda harus menyisipkan kode PHP di dalam tag <code>&lt;?php ... ?&gt;</code>. Berikut adalah contoh struktur dasar PHP:</p>
+    <pre>
+<code>
+&lt;?php
+    echo "Hello, World!";
+?&gt;
+</code>
+    </pre>
+    <p>Dalam contoh di atas, <code>echo</code> digunakan untuk menampilkan teks "Hello, World!" di browser.</p>
+</section>
+
+<section id="variabel-dan-tipe-data">
+    <h2>Variabel dan Tipe Data</h2>
+    <p>Variabel di PHP diawali dengan tanda dolar (<code>$</code>) dan dapat menyimpan berbagai tipe data. Berikut adalah beberapa tipe data yang umum digunakan di PHP:</p>
+    <ul>
+        <li><strong>Integer</strong>: Bilangan bulat.</li>
+        <li><strong>Float</strong>: Bilangan desimal.</li>
+        <li><strong>String</strong>: Teks.</li>
+        <li><strong>Boolean</strong>: Nilai benar (<code>true</code>) atau salah (<code>false</code>).</li>
+    </ul>
+    <p>Contoh penggunaan variabel:</p>
+    <pre>
+<code>
+&lt;?php
+    $nama = "John Doe";
+    $umur = 30;
+    $is_student = true;
+
+    echo "Nama: " . $nama . "&lt;br&gt;";
+    echo "Umur: " . $umur . "&lt;br&gt;";
+    echo "Apakah mahasiswa? " . ($is_student ? "

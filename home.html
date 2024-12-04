@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .marquee {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .marquee span {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="marquee">
+    <span>Selamat Datang di Halaman Web Kami!</span>
+</div>
+
+</body>
+</html>

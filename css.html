@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #35424a;
+            font-weight: bold;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+        }
+        h2 {
+            color: #35424a;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+        code {
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Materi CSS</h1>
+</header>
+
+<nav>
+    <a href="#apa-itu-css">Apa itu CSS?</a>
+    <a href="#struktur-css">Struktur CSS</a>
+    <a href="#selektor-css">Selektor CSS</a>
+    <a href="#properti-css">Properti CSS</a>
+    <a href="#contoh-css">Contoh Penggunaan CSS</a>
+</nav>
+
+<section id="apa-itu-css">
+    <h2>Apa itu CSS?</h2>
+    <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk menggambarkan presentasi dari dokumen yang ditulis dalam HTML atau XML. CSS digunakan untuk mengatur tata letak, warna, font, dan elemen visual lainnya dari halaman web. Dengan CSS, Anda dapat membuat halaman web yang lebih menarik dan mudah dibaca.</p>
+</section>
+
+<section id="struktur-css">
+    <h2>Struktur CSS</h2>
+    <p>CSS terdiri dari aturan yang terdiri dari selektor dan deklarasi. Berikut adalah contoh struktur CSS:</p>
+    <pre>
+<code>
+selector {
+    property: value;
+}
+</code>
+    </pre>
+    <p>Contoh:</p>
+    <pre>
+<code>
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+</code>
+    </pre>
+    <p>Dalam contoh di atas:</p>
+    <ul>
+        <li><strong>selector</strong>: <code>h1</code> (elemen yang ingin kita gaya).</li>
+        <li><strong>property</strong>: <code>color</code> dan <code>font-size</code> (apa yang ingin kita ubah).</li>
+        <li><strong>value</strong>: <code>blue</code> dan <code>24px</code> (nilai yang diterapkan pada properti).</li>
+    </ul>
+</section>
+
+<section id="selektor-css">
+    <h2>Selektor CSS</h2>
+    <p>Selektor adalah bagian dari aturan CSS yang menentukan elemen mana yang akan dipilih untuk diterapkan gaya. Berikut adalah beberapa jenis selektor:</p>
+    <ul>
+        <li><strong>Selektor Elemen</strong>: Memilih semua elemen dari jenis tertentu.
+            <pre><code>p { color: red; }</code></pre>
+        </li>
+        <li><strong>Selektor Kelas</strong>: Memilih elemen dengan kelas tertentu. Kelas diawali dengan titik (<code>.</code>).
+            <pre><code>.highlight { background-color: yellow; }</code></pre>
+        </li>
+        <li><strong>Selektor ID
